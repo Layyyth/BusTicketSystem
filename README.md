@@ -83,31 +83,5 @@ Visit: http://localhost:8081/BusTicketSystem
 
 ------------------------------------------------------
 
-📂 Project Structure
-├── model/              # Core models (User, Trip, Ticket)
-├── servlet/            # Login, Booking, Trip, Config handlers
-├── config/             # FareConfig singleton
-├── strategy/           # Fare strategies
-├── factory/            # TicketFactory
-├── repository/         # DB interaction
-├── jsp/                # JSP views (login, admin panel, tickets)
-├── Util/               # DB Utility
-├── test/               # JUnit test classes
-└── pom.xml             # Maven config
-
---------------------------------------------------------
-
-🧪 Testing
-Run JUnit tests from:
-src/test/java/
-Tests include:
-    -Trip creation
-    -Ticket booking
-    -Strategy fare correctness
-    -Singleton fare config updates
-    -Booking edge cases (overbooking)
-
-
--------------------------------------------------------
  Authors
 Developed by Laith Aj
