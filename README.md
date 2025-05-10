@@ -83,5 +83,4 @@ Visit: http://localhost:8081/BusTicketSystem
 
 ------------------------------------------------------
 
- Authors
 Developed by Laith Aj
