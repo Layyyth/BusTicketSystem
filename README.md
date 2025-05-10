@@ -66,3 +66,50 @@ This project is a complete **Web-based Bus Ticketing System** developed using **
 ```bash
 git clone https://github.com/Layyyth/BusTicketSystem.git
 cd BusTicketSystem
+
+2. Configure PostgreSQL
+Create a database:
+CREATE DATABASE bus_ticketing;
+Run the SQL script (provided in /sql/ or manually set up tables: users, trips, tickets).
+
+3. Update DB Credentials
+In Util/DBUtil.java, update:
+private static final String URL = "jdbc:postgresql://localhost:5432/bus_ticketing";
+private static final String USER = "your_postgres_username";
+private static final String PASSWORD = "your_postgres_password";
+
+4. Run the App
+Open in IntelliJ IDEA
+Run on Tomcat 10
+Visit: http://localhost:8081/BusTicketSystem
+
+------------------------------------------------------
+
+📂 Project Structure
+├── model/              # Core models (User, Trip, Ticket)
+├── servlet/            # Login, Booking, Trip, Config handlers
+├── config/             # FareConfig singleton
+├── strategy/           # Fare strategies
+├── factory/            # TicketFactory
+├── repository/         # DB interaction
+├── jsp/                # JSP views (login, admin panel, tickets)
+├── Util/               # DB Utility
+├── test/               # JUnit test classes
+└── pom.xml             # Maven config
+
+--------------------------------------------------------
+
+🧪 Testing
+Run JUnit tests from:
+src/test/java/
+Tests include:
+    -Trip creation
+    -Ticket booking
+    -Strategy fare correctness
+    -Singleton fare config updates
+    -Booking edge cases (overbooking)
+
+
+-------------------------------------------------------
+ Authors
+Developed by Laith Aj
