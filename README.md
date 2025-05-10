@@ -61,9 +61,7 @@ This project is a complete **Web-based Bus Ticketing System** developed using **
 
 ## 🛠 How to Run Locally
 
-1. **Clone the repo**
-
-```bash
+1- clone the repo 
 git clone https://github.com/Layyyth/BusTicketSystem.git
 cd BusTicketSystem
 
